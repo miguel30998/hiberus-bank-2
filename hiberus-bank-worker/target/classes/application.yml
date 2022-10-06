@@ -1,0 +1,46 @@
+server:
+  port: 8082
+
+spring:
+  config:
+    activate:
+      on-profile: default
+  application:
+    name: hiberus-bank-worker
+  datasource:
+    url: jdbc:mysql://${hiberus-bank-worker-db:localhost}:3307/hiberus-bank-worker-db
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+--- # Testing configuration
+
+server:
+  port: ${random.int(5000,5100)}
+
+spring:
+  config:
+    activate:
+      on-profile: test
+  application:
+    name: ticket-price
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testdb
+    username: raul
+    password: raul
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+#####LOGGING. . . .
+logging.level.org.springframework.web: DEBUG
+logging.level.org.hibernate: ERROR
+
+#output to a temp_folder/file(give your file path here)
+logging:
+  file: /log/worker/worker.log

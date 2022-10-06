@@ -1,0 +1,38 @@
+server:
+  port: 8081
+
+spring:
+  config:
+    activate:
+      on-profile: default
+  application:
+    name: hiberus-bank-payroll
+  datasource:
+    url: jdbc:postgresql://${hiberus-bank-payroll-db:localhost}:5432/hiberus-bank-payroll-db
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+--- # Testing configuration
+
+server:
+  port: ${random.int(5000,5100)}
+
+spring:
+  config:
+    activate:
+      on-profile: test
+  application:
+    name: hiberus-bank-payroll
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:h2:mem:testdb
+    username: root
+    password: root
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true

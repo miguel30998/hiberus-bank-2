@@ -1,0 +1,55 @@
+version: '3'
+
+services:
+
+  hiberus-bank-bizum-db:
+    image: mysql:8.0
+    ports:
+      - "3306:3306"
+    environment:
+      - "MYSQL_DATABASE=hiberus-bank-bizum-db"
+      - "MYSQL_ROOT_PASSWORD=root"
+
+  hiberus-bank-payroll-db:
+    image: postgres:14.0
+    ports:
+      - "5432:5432"
+    environment:
+      - "PASSWORD_ENCRIPTION=md5"
+      - "POSTGRES_USER=root"
+      - "POSTGRES_PASSWORD=root"
+      - "DEFAULT_ENCODING=UTF8"
+      - "POSTGRES_DB=hiberus-bank-payroll-db"
+  hiberus-bank-worker-db:
+    image: mysql:8.0
+    ports: 
+      - "3307:3306"
+    environment:
+      - "MYSQL_DATABASE=hiberus-bank-worker-db"
+      - "MYSQL_ROOT_PASSWORD=root"
+
+  hiberus-bank-bizum:
+    build: ./hiberus-bank-bizum
+    ports:
+      - "8080:8080"
+    environment:
+      - "hiberus-bank-bizum-db=hiberus-bank-bizum-db"
+      - "ticket-price-host=ticket-price"
+    restart: always
+  
+  hiberus-bank-worker:
+    build: "./hiberus-bank-worker"
+    ports: 
+      - "8082:8082"
+    environment:
+      - "hiberus-bank-worker-db=hiberus-bank-worker-db"
+    restart: always
+  
+  hiberus-bank-payroll:
+    build: ./hiberus-bank-payroll
+    ports:
+      - "8081:8081"
+    environment:
+      - "hiberus-bank-payroll-db=hiberus-bank-payroll-db"
+    restart: always
+    
