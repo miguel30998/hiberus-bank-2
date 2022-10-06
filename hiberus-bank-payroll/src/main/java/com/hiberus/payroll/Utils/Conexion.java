@@ -18,7 +18,7 @@ public class Conexion {
 		if(token!=null){
 			conexion.addRequestProperty("Authorization", "Bearer " + token);
 		}
-		conexion.setRequestMethod("GET");;
+		conexion.setRequestMethod("PUT");;
 		// Búferes para leer
 		JSONObject datos = new JSONObject(conexion.getContent());
 		BufferedReader rd = new BufferedReader(new InputStreamReader(conexion.getInputStream()));
