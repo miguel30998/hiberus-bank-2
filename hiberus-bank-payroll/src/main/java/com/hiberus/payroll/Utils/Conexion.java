@@ -16,7 +16,7 @@ public class Conexion {
 		// Abrir la conexión e indicar que será de tipo GET
 		HttpURLConnection conexion = (HttpURLConnection) url.openConnection();
 		if(token!=null){
-			conexion.addRequestProperty("Authorization", "Bearer " + token);
+			conexion.addRequestProperty("Authorization",token);
 		}
 		conexion.setRequestMethod("PUT");;
 		// Búferes para leer

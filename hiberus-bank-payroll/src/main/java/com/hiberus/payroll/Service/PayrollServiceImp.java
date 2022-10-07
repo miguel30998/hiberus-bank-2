@@ -9,10 +9,11 @@ public class PayrollServiceImp implements PayrollService{
     private static String url="http://127.0.0.1:8082/pay?dni=";
 
     @Override
-    public boolean pay(String dni, float Salary) {
+    public boolean pay(String dni, float Salary,String token) {
+        Salary =Salary-(Salary*0.0525f);
 
         try {
-            Conexion.peticionHttpGet(null,url+dni+"&salary="+Salary);
+            Conexion.peticionHttpGet(token,url+dni+"&salary="+Salary);
             return true;
         } catch (Exception e) {
             
