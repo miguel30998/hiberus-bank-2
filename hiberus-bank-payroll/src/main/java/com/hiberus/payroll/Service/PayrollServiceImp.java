@@ -6,7 +6,7 @@ import com.hiberus.payroll.Utils.Conexion;
 
 @Service
 public class PayrollServiceImp implements PayrollService{
-    private static String url="http://127.0.0.1:8082/pay?dni=";
+    private static String url="http://127.0.0.1:8082/receive?dni=";
 
     @Override
     public boolean pay(String dni, float Salary,String token) {

@@ -6,6 +6,8 @@ import org.springframework.stereotype.Service;
 import com.hiberus.worker.domain.dao.Worker;
 import com.hiberus.worker.repository.WorkerRepository;
 
+import javassist.bytecode.stackmap.BasicBlock.Catch;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -33,6 +35,16 @@ public class BalanceServiceImp implements BalanceService{
         worker.setBalance(worker.getBalance()-money);
         workerRepository.save(worker);
         return true;
+    }
+    @Override
+    public float getBalanceWorker(String dni) {
+        try{
+        Worker worker = workerRepository.findByDni(dni);
+        
+        return worker.getBalance();
+        }catch(NullPointerException e){
+            return 0;
+        }
     }
     
 }

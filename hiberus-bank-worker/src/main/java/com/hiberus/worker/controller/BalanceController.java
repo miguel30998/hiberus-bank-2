@@ -12,5 +12,16 @@ public interface BalanceController {
         @ApiResponse(code=201, message="La nomina ha sido pagada correctamente")
     })
     ResponseEntity<?>pay(String dni, float salary);
-    
+
+    @ApiOperation(value="Comprobar balance")
+    @ApiResponses({
+        @ApiResponse(code=201, message="El balance ha sido mostrado correctamente")
+    })
+    ResponseEntity<?>getWorkerBalance(String dni);
+
+    @ApiOperation(value="Pagar nomina")
+    @ApiResponses({
+        @ApiResponse(code=201, message="La nomina ha sido pagada correctamente")
+    })
+    ResponseEntity<?>receive(String dni, float salary);
 }

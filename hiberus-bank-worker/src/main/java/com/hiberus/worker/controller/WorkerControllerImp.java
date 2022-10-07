@@ -47,7 +47,7 @@ public class WorkerControllerImp implements WorkerController{
     @GetMapping(path="/get")
     public ResponseEntity<BodyWorker>showWorker(@QueryParam(value="dni") String dni){
         Worker worker =workerService.conseguirWorkerDni(dni);
-     
+        workerRepository.findById(dni);
         BodyWorker bodyWorker=new BodyWorker(worker);
         return new ResponseEntity<BodyWorker>(bodyWorker,HttpStatus.ACCEPTED);
     }
