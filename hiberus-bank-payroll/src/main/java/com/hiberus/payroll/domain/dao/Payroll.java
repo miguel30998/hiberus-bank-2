@@ -7,12 +7,12 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name="Payroll")
+@Table(name="payroll")
 @Getter
 @Setter
 public class Payroll {
@@ -21,6 +21,8 @@ public class Payroll {
     @Id
     String dni;
     float salary;
+    
+    public Payroll(){}
 
     public Payroll( String dni, float salary){
         String pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'";

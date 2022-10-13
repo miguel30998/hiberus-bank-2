@@ -1,1 +1,8 @@
+com/hiberus/payroll/Repository/PayrollRepository.class
+com/hiberus/payroll/Controller/PayrollController.class
+com/hiberus/payroll/domain/dao/Payroll.class
 com/hiberus/payroll/PayrollApplication.class
+com/hiberus/payroll/Controller/PayrollControllerImp.class
+com/hiberus/payroll/Service/PayrollService.class
+com/hiberus/payroll/Utils/Conexion.class
+com/hiberus/payroll/Service/PayrollServiceImp.class

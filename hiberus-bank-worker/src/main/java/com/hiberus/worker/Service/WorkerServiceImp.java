@@ -22,10 +22,8 @@ public class WorkerServiceImp implements WorkerService{
     public Worker conseguirWorkerDni(String dni){
         try{
             Worker worker = workerRepository.findByDni(dni);
-            System.out.println(worker.toString());
             return worker;
         }catch(NullPointerException e){
-            System.out.println("null");
             return null;
         }
     }
@@ -33,7 +31,7 @@ public class WorkerServiceImp implements WorkerService{
     public boolean comprobarSiExisteWorker(Worker worker) {
         try{
             Worker workerAux = workerRepository.findByDni(worker.getDni());
-            if(workerAux.equals(worker)){
+            if(workerAux!=null && workerAux.equals(worker)){
                 return true;
             }return false;
         }catch(NullPointerException e ){

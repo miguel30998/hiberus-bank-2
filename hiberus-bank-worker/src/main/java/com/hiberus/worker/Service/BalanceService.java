@@ -6,5 +6,7 @@ public interface BalanceService {
 
     float getBalanceWorker(String dni);
 
+    boolean setBalanceWorker(String dni, float money);
+
     
 }

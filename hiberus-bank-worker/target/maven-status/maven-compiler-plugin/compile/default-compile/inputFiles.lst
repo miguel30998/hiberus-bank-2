@@ -1,2 +1,16 @@
-/home/magimenez/Escritorio/Curso/7ºPractica/hiberus-bank/hiberus-bank-worker/src/main/java/com/hiberus/worker/domain/dao/worker.java
-/home/magimenez/Escritorio/Curso/7ºPractica/hiberus-bank/hiberus-bank-worker/src/main/java/com/hiberus/worker/WorkerApplication.java
+/home/magimenez/Escritorio/Curso/Practica 7 buena/hiberus-bank/hiberus-bank-worker/src/main/java/com/hiberus/worker/WorkerApplication.java
+/home/magimenez/Escritorio/Curso/Practica 7 buena/hiberus-bank/hiberus-bank-worker/src/main/java/com/hiberus/worker/Service/WorkerServiceImp.java
+/home/magimenez/Escritorio/Curso/Practica 7 buena/hiberus-bank/hiberus-bank-worker/src/main/java/com/hiberus/worker/controller/SalaryController.java
+/home/magimenez/Escritorio/Curso/Practica 7 buena/hiberus-bank/hiberus-bank-worker/src/main/java/com/hiberus/worker/Service/BalanceServiceImp.java
+/home/magimenez/Escritorio/Curso/Practica 7 buena/hiberus-bank/hiberus-bank-worker/src/main/java/com/hiberus/worker/Service/SalaryServiceImp.java
+/home/magimenez/Escritorio/Curso/Practica 7 buena/hiberus-bank/hiberus-bank-worker/src/main/java/com/hiberus/worker/repository/WorkerRepository.java
+/home/magimenez/Escritorio/Curso/Practica 7 buena/hiberus-bank/hiberus-bank-worker/src/main/java/com/hiberus/worker/Service/BalanceService.java
+/home/magimenez/Escritorio/Curso/Practica 7 buena/hiberus-bank/hiberus-bank-worker/src/main/java/com/hiberus/worker/controller/WorkerController.java
+/home/magimenez/Escritorio/Curso/Practica 7 buena/hiberus-bank/hiberus-bank-worker/src/main/java/com/hiberus/worker/controller/BalanceController.java
+/home/magimenez/Escritorio/Curso/Practica 7 buena/hiberus-bank/hiberus-bank-worker/src/main/java/com/hiberus/worker/controller/SalaryControllerImp.java
+/home/magimenez/Escritorio/Curso/Practica 7 buena/hiberus-bank/hiberus-bank-worker/src/main/java/com/hiberus/worker/domain/dto/BodyWorker.java
+/home/magimenez/Escritorio/Curso/Practica 7 buena/hiberus-bank/hiberus-bank-worker/src/main/java/com/hiberus/worker/controller/BalanceControllerImp.java
+/home/magimenez/Escritorio/Curso/Practica 7 buena/hiberus-bank/hiberus-bank-worker/src/main/java/com/hiberus/worker/Service/SalaryService.java
+/home/magimenez/Escritorio/Curso/Practica 7 buena/hiberus-bank/hiberus-bank-worker/src/main/java/com/hiberus/worker/domain/dao/Worker.java
+/home/magimenez/Escritorio/Curso/Practica 7 buena/hiberus-bank/hiberus-bank-worker/src/main/java/com/hiberus/worker/controller/WorkerControllerImp.java
+/home/magimenez/Escritorio/Curso/Practica 7 buena/hiberus-bank/hiberus-bank-worker/src/main/java/com/hiberus/worker/Service/WorkerService.java

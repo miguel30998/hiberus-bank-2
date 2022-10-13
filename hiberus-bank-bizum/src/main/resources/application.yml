@@ -8,7 +8,7 @@ spring:
   application:
     name: hiberus-bank-bizum
   datasource:
-    url: jdbc:mysql://${hiberus-bank-bizum-db:localhost}:3306/hiberus-bank-bizum
+    url: jdbc:mysql://${hiberus-bank-bizum-db:localhost}:3306/hiberus-bank-bizum-db
     username: root
     password: root
   jpa:

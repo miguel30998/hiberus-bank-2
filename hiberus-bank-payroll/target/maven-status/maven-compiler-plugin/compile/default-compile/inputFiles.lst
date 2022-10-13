@@ -1,1 +1,8 @@
-/home/magimenez/Escritorio/Curso/7ºPractica/hiberus-bank/hiberus-bank-payroll/src/main/java/com/hiberus/payroll/PayrollApplication.java
+/home/magimenez/Escritorio/Curso/Practica 7 buena/hiberus-bank/hiberus-bank-payroll/src/main/java/com/hiberus/payroll/Service/PayrollService.java
+/home/magimenez/Escritorio/Curso/Practica 7 buena/hiberus-bank/hiberus-bank-payroll/src/main/java/com/hiberus/payroll/Controller/PayrollController.java
+/home/magimenez/Escritorio/Curso/Practica 7 buena/hiberus-bank/hiberus-bank-payroll/src/main/java/com/hiberus/payroll/Repository/PayrollRepository.java
+/home/magimenez/Escritorio/Curso/Practica 7 buena/hiberus-bank/hiberus-bank-payroll/src/main/java/com/hiberus/payroll/Controller/PayrollControllerImp.java
+/home/magimenez/Escritorio/Curso/Practica 7 buena/hiberus-bank/hiberus-bank-payroll/src/main/java/com/hiberus/payroll/PayrollApplication.java
+/home/magimenez/Escritorio/Curso/Practica 7 buena/hiberus-bank/hiberus-bank-payroll/src/main/java/com/hiberus/payroll/domain/dao/Payroll.java
+/home/magimenez/Escritorio/Curso/Practica 7 buena/hiberus-bank/hiberus-bank-payroll/src/main/java/com/hiberus/payroll/Service/PayrollServiceImp.java
+/home/magimenez/Escritorio/Curso/Practica 7 buena/hiberus-bank/hiberus-bank-payroll/src/main/java/com/hiberus/payroll/Utils/Conexion.java

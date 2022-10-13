@@ -49,7 +49,13 @@ public class BalanceControllerImp implements BalanceController {
             return new ResponseEntity<Boolean>(true,HttpStatus.ACCEPTED);
         }
         return new ResponseEntity<Boolean>(false, HttpStatus.INTERNAL_SERVER_ERROR);
-
     }
-    
+    @Override
+    @PutMapping("/set")
+    public ResponseEntity<Boolean>set(@QueryParam("dni")String dni,@QueryParam("salary")float salary){
+        if(balanceService.setBalanceWorker(dni, salary)){
+            return new ResponseEntity<Boolean>(true,HttpStatus.ACCEPTED);
+        }
+        return new ResponseEntity<Boolean>(false,HttpStatus.INTERNAL_SERVER_ERROR);
+    }  
 }

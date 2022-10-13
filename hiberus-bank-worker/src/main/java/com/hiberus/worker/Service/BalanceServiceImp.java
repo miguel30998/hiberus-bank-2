@@ -46,5 +46,18 @@ public class BalanceServiceImp implements BalanceService{
             return 0;
         }
     }
-    
+    @Override
+    public boolean setBalanceWorker(String dni,float money){
+        try{
+            Worker worker =workerRepository.findByDni(dni);
+            worker.setBalance(money);
+            workerRepository.save(worker);
+            return true;
+        }catch(NullPointerException e){
+            log.error("Error durante la busqueda de un worker segun su dni");
+            return false;
+        }
+    }
 }
+    
+

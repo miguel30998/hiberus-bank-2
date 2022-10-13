@@ -36,7 +36,8 @@ services:
       - "hiberus-bank-bizum-db=hiberus-bank-bizum-db"
       - "ticket-price-host=ticket-price"
     restart: always
-  
+
+
   hiberus-bank-worker:
     build: "./hiberus-bank-worker"
     ports: 
@@ -44,6 +45,8 @@ services:
     environment:
       - "hiberus-bank-worker-db=hiberus-bank-worker-db"
     restart: always
+
+
   
   hiberus-bank-payroll:
     build: ./hiberus-bank-payroll
@@ -52,4 +55,6 @@ services:
     environment:
       - "hiberus-bank-payroll-db=hiberus-bank-payroll-db"
     restart: always
+
+    
     
